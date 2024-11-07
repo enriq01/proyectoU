@@ -26,9 +26,6 @@ export class NavbarComponent implements OnInit {
     //   this.proveedores = [...new Set(allProveedores)];
     //   console.log(this.proveedores)
     // });
-
-    this.getCpu()
-    this.getGpu()
     this.toggleMenu()
   }
 
@@ -38,23 +35,7 @@ export class NavbarComponent implements OnInit {
     this.isMenuVisible = !this.isMenuVisible;
   }
 
-  getCpu(){
-    this.cpuService.getProcesador().subscribe(params => {
-      this.allitemsCpu = params.body.map((x:any) => x.Proveedor)
-      this.proveedoresCpu = [...new Set(this.allitemsCpu)]
-      console.log(this.allitemsCpu)
-      console.log(this.proveedoresCpu)
-    })
-  }
 
-  getGpu(){
-    this.gpuService.getgpu().subscribe(params => {
-      const allitemsGpu = params.body.map((x:any) => x.Proveedor)
-      this.proveedoresGpu = [...new Set(allitemsGpu)]
-      console.log(allitemsGpu)
-      console.log(this.proveedoresGpu)
-    })
-  }
 onSelectProductoCpu(){
   this.router.navigate(['/cpu']);
 }
@@ -68,12 +49,5 @@ onSelectProductoCpu(){
     this.router.navigate(['/grafica'])
   }
 
-  onSelectProveedorSSD(){
-    this.router.navigate(['/ssd'])
-  }
-
-  onSelectProveedorTorre(){
-    this.router.navigate(['/torre'])
-  }
 
 }
