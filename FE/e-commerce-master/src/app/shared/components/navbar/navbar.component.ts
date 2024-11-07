@@ -49,5 +49,23 @@ onSelectProductoCpu(){
     this.router.navigate(['/grafica'])
   }
 
+  onSelectProveedorSSD(){
+    this.router.navigate(['/ssd'])
+  }
 
+  onSelectProveedorTorre(){
+    this.router.navigate(['/torre'])
+  }
+
+  onSelectProveedorHdd(){
+    this.router.navigate(['/hdd'])
+  }
+
+  onSelectProveedorCpuCooler(){
+    this.router.navigate(['/cpuCooler'])
+  }
+
+  onSelectProveedormotherboard(){
+    this.router.navigate(['/motherboard'])
+  }
 }
