@@ -9,12 +9,22 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from './components/layout/layout.module';
 import { ProductPageComponent } from './features/home/pages/productPage/productPage.component';
 import { ProductPageGpuComponent } from './features/home/pages/productPageGpu/productPageGpu.component';
+import { SsdComponent } from './features/home/pages/ssd/ssd.component';
+import { ProductPageSSDComponent } from './features/home/pages/productPageSSD/productPageSSD.component';
+import { TorreComponent } from './features/home/pages/torre/torre.component';
+import { ProductPageTorreComponent } from './features/home/pages/productPageTorre/productPageTorre.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductPageComponent,
-    ProductPageGpuComponent
+    ProductPageGpuComponent,
+    ProductPageGpuComponent,
+    SsdComponent,
+    ProductPageSSDComponent,
+    TorreComponent,
+    ProductPageTorreComponent
   ],
   imports: [
     BrowserModule,
