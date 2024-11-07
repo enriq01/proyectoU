@@ -27,7 +27,7 @@ export class ProductPageGpuComponent implements OnInit {
 getProduct(){
   this.gpuService.getgpuById(this.productId).subscribe((data)=>{
     this.item = data;
-    console.log(this.item)
+    console.log('data del producto:',this.item)
   })
     
 }

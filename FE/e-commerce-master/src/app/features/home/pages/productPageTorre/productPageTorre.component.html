@@ -1,0 +1,30 @@
+<div class="product-container" *ngFor = "let items of item.body">
+  <div class="image-container">
+    <img [src]="items.imagen" alt="Producto" *ngIf="items.imagen" />
+  </div>
+
+  <div class="details-container">
+    <h3 class="product-name">{{ items.Nombre }}</h3>
+    <h4 class="product-price">Precio: {{ items.Precio}}</h4>
+    <div class="description-container">
+      <h5>Descripción:</h5>
+      <ul>
+        <li>Abastecimiento de Energia: {{items.AbastecimientoEnergia}}</li>
+        <li>Aislamiento de Ruido: {{items.AislamientoRuido}}</li>
+        <li>Alto: {{items.Alto}}</li>
+        <li>Altura CPU Refrigerador Admitida: {{items.AlturaCPUrefrigeradorAdmitida}}</li>
+        <li>Ancho: {{items.Ancho}}</li>
+        <li>Color Primario: {{items.ColorPrimario}}</li>
+        <li>EAN: {{items.EAN}}</li>
+        <li>Filtro de Polvo: {{items.FiltroPolvo}}</li>
+        <li>Gestion de Cable: {{items.GestionCable}}</li>
+        <li>Longitud de GPU admitida: {{items.LongitudGPUadmitida}}</li>
+        <li>MPN: {{items.MPN}}</li>
+        <li>Placa Madre: {{items.PlacaMadre}}</li>
+        <li>Profundidad: {{items.Profundidad}}</li>
+        <li>Proveedor: {{items.Proveedor}}</li>
+        <li>Filtro de Polvo: {{items.FiltroPolvo}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

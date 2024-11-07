@@ -68,5 +68,12 @@ onSelectProductoCpu(){
     this.router.navigate(['/grafica'])
   }
 
+  onSelectProveedorSSD(){
+    this.router.navigate(['/ssd'])
+  }
+
+  onSelectProveedorTorre(){
+    this.router.navigate(['/torre'])
+  }
 
 }
